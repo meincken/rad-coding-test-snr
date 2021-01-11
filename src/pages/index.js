@@ -29,6 +29,10 @@ const IndexPage = () => {
         return '<span class="' + className + '"><p>' + (`${data.titles[i]}`) + '</p></span>';
       },
     },
+    navigation: {
+      nextEl: '.btn-next',
+      prevEl: '.btn-prev'
+    },
     getSwiper: updateSwiper,
   };
 

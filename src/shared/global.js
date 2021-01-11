@@ -118,6 +118,7 @@ export const bodyStyles = css`
   .swiper-container-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-custom, .swiper-pagination-fraction {
     top: 4rem;
+    height: 2rem;
   }
 
   .swiper-pagination-bullet {

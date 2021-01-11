@@ -1,5 +1,5 @@
 import React from "react"
-import { Section, H2, P, Paginate } from "../../shared/ui-kit"
+import { Section, H2, P } from "../../shared/ui-kit"
 
 import Data from "../../data/mock-api.json"
 const data = Data.content.slides[2]
@@ -18,7 +18,10 @@ const Audience = () => {
         <br />
         <input type="radio" value={data.content.groups[2].label.replace(/\s+/g, '-').toLowerCase()} name="group" /> {data.content.groups[2].label}
       </div>
-      <Paginate />
+      <nav className="slide-nav">
+        <button className="btn btn-prev" title={data.content.back.label}>Back</button>
+        <button className="btn btn-next" title={data.content.next.label}>Next</button>
+      </nav>
     </Section>
   )
 }
