@@ -1,5 +1,6 @@
 import React from 'react'
-import { GlobalStyle } from "../../shared/global";
+import 'normalize.css'
+import { GlobalStyle } from "../../shared/global"
 import { Helmet } from 'react-helmet'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'

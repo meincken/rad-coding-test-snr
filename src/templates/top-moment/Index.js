@@ -1,5 +1,5 @@
 import React from "react"
-import { Section, H2, P } from "../../shared/ui-kit"
+import { Section, H2, P, Paginate } from "../../shared/ui-kit"
 
 import Data from "../../data/mock-api.json"
 const data = Data.content.slides[3]
@@ -14,6 +14,7 @@ const TopMoment = () => {
       <div className="image-block">
         <img src={data.image.url} alt={data.image.alt} />
       </div>
+      <Paginate />
     </Section>
   )
 }

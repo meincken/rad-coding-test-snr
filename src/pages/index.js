@@ -23,12 +23,6 @@ const IndexPage = () => {
       type: "bullets",
       clickable: true
     },
-    navigation: {
-      nextEl: '.btn-next',
-      prevEl: '.btn-prev'
-    },
-    renderNextButton: () => <button className="btn btn-next">Next</button>,
-    renderPrevButton: () => <button className="btn btn-prev">Back</button>,
     getSwiper: updateSwiper,
   };
 

@@ -1,5 +1,5 @@
 import React from "react"
-import { Section, H2, P } from "../../shared/ui-kit"
+import { Section, H2, P, Paginate } from "../../shared/ui-kit"
 
 import Data from "../../data/mock-api.json"
 const data = Data.content.slides[0]
@@ -14,6 +14,7 @@ const Welcome = () => {
       <div className="image-block">
         <img src={data.content.image.url} alt={data.content.image.alt} />
       </div>
+      <Paginate />
     </Section>
   )
 }

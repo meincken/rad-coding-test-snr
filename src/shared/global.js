@@ -17,11 +17,13 @@ export const bodyStyles = css`
     box-sizing: border-box;
   }
 
-  /* main {
+  main {
     height: 100vh;
     width: 100vw;
+    margin: 0;
+    padding: 0;
     position: relative;
-  } */
+  }
 
   h1,
   h2,
@@ -151,10 +153,14 @@ export const bodyStyles = css`
   }
 
   .content-block {
-    width: 50%;
+    @media (min-width: 768px){
+      width: 50%;
+    }
   }
   .image-block {
-    width: 40%;
+    @media (min-width: 768px){
+      width: 40%;
+    }
   }
 
   .ImageLeftLockup {

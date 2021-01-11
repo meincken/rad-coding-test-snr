@@ -36,8 +36,15 @@ const SectionDiv = styled.div`
   justify-content: space-between;
   align-items: center;
   max-width: 117rem;
+  height: 100vh;
   margin: 0 auto;
-  padding: 5rem 0;
+  padding: 10rem 0;
+  flex-flow: column;
+  position: relative;
+
+  @media (min-width: 768px) {
+    flex-flow: row wrap;
+  }
 `;
 
 export const Section = ({ children, className }) => (
