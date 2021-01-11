@@ -10,9 +10,12 @@ import Inspiration from '../templates/inspiration/'
 
 import 'swiper/swiper-bundle.min.css'
 
+import Data from "../data/mock-api.json"
+const data = Data.content.pagination
+
 const IndexPage = () => {
 
-  const [updateSwiper] = useState(null);
+  const [ updateSwiper] = useState(null);
 
   const params = {
     Swiper,
@@ -21,12 +24,13 @@ const IndexPage = () => {
     pagination: {
       el: ".swiper-pagination",
       type: "bullets",
-      clickable: true
+      clickable: true,
+      renderBullet: function (i, className) {
+        return '<span class="' + className + '"><p>' + (`${data.titles[i]}`) + '</p></span>';
+      },
     },
     getSwiper: updateSwiper,
   };
-
-
 
   return (
     <Layout>

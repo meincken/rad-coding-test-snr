@@ -38,7 +38,7 @@ const SectionDiv = styled.div`
   max-width: 117rem;
   height: 100vh;
   margin: 0 auto;
-  padding: 10rem 0;
+  padding: 10rem 1rem;
   flex-flow: column;
   position: relative;
 
@@ -75,7 +75,8 @@ const Pagi = styled.nav`
   bottom: 1rem;
   right: 0;
 
-  a {
+  .btn {
+    background: transparent;
     border: 2px solid black;
     border-radius: 5rem;
     font-size: 2.4rem;
@@ -90,11 +91,11 @@ const Pagi = styled.nav`
     }
   }
 
-  .prev {
+  .btn-prev {
 
   }
 
-  .next {
+  .btn-next {
     background-color: black;
     color: white;
   }
@@ -102,7 +103,7 @@ const Pagi = styled.nav`
 
 export const Paginate = ({ prevLink, nextLink }) => (
   <Pagi>
-    <a className="prev" href="{prevLink}">Back</a>
-    <a className="next" href="{nextLink}">Next</a>
+    <button className="btn btn-prev" title={prevLink}>Back</button>
+    <button className="btn btn-next" title={nextLink}>Next</button>
   </Pagi>
 );

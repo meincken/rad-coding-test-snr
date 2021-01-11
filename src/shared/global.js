@@ -117,7 +117,30 @@ export const bodyStyles = css`
 
   .swiper-container-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-custom, .swiper-pagination-fraction {
-    top: 1rem;
+    top: 4rem;
+  }
+
+  .swiper-pagination-bullet {
+    margin: 0 2rem;
+    position: relative;
+
+    p {
+      display: none;
+      position: absolute;
+      top: -2.5rem;
+      /* left: -50%; */
+      transform: translate(-50%, 0);
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+
+    &.swiper-pagination-bullet-active {
+      background: black;
+      opacity: 1;
+      p {
+        display: block;
+      }
+    }
   }
 
   .swiper-pagination-bullet {
@@ -126,29 +149,23 @@ export const bodyStyles = css`
     width: 1rem;
   }
 
-  .swiper-pagination-bullet-active {
-    background: black;
-    opacity: 1;
-  }
-
   .btn {
     background: transparent;
     border: 0.2rem solid #000;
     border-radius: 5rem;
-    bottom: 1rem;
+    bottom: 5rem;
+    margin-right: 1.4rem;
     padding: 1rem 2rem;
-    position: absolute;
-    right: 0;
     text-transform: uppercase;
     z-index: 11;
 
     &.btn-prev {
-      right: 9rem;
     }
 
     &.btn-next {
       background: black;
       color: white;
+      margin-right: 0;
     }
   }
 
@@ -188,6 +205,13 @@ export const bodyStyles = css`
     &--3 {
       background-color: #C4EC90;
     }
+  }
+
+  .slide-nav {
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
   }
 `;
 
