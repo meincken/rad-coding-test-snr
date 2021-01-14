@@ -115,10 +115,11 @@ export const bodyStyles = css`
     display: block;
   }
 
-  .swiper-container-horizontal > .swiper-pagination-bullets,
-  .swiper-pagination-custom, .swiper-pagination-fraction {
-    top: 4rem;
-    height: 2rem;
+  .swiper-container-horizontal {
+    > .swiper-pagination-bullets {
+      top: 4rem;
+      height: 2rem;
+    }
   }
 
   .swiper-pagination-bullet {
@@ -129,7 +130,6 @@ export const bodyStyles = css`
       display: none;
       position: absolute;
       top: -2.5rem;
-      /* left: -50%; */
       transform: translate(-50%, 0);
       white-space: nowrap;
       text-transform: uppercase;
@@ -148,26 +148,6 @@ export const bodyStyles = css`
     height: 1rem;
     opacity: .5;
     width: 1rem;
-  }
-
-  .btn {
-    background: transparent;
-    border: 0.2rem solid #000;
-    border-radius: 5rem;
-    bottom: 5rem;
-    margin-right: 1.4rem;
-    padding: 1rem 2rem;
-    text-transform: uppercase;
-    z-index: 11;
-
-    &.btn-prev {
-    }
-
-    &.btn-next {
-      background: black;
-      color: white;
-      margin-right: 0;
-    }
   }
 
   .content-block {
