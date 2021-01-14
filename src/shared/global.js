@@ -151,6 +151,11 @@ export const bodyStyles = css`
   }
 
   .content-block {
+    p {
+      font-size: 3.6rem;
+      line-height: 120%;
+    }
+
     @media (min-width: 768px){
       width: 50%;
     }
