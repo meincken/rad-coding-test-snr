@@ -26,7 +26,7 @@ const IndexPage = () => {
       type: "bullets",
       clickable: true,
       renderBullet: function (i, className) {
-        return '<span class="' + className + '"><p>'+data.pagination.titles[i]+'</p></span>';
+        return '<span class="' + className + '"><p>' + data.pagination.titles[i] + '</p></span>';
       },
     },
     navigation: {
