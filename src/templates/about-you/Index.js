@@ -1,7 +1,7 @@
 import React from "react"
 import { Section, H2, P, Paginate } from "../../shared/ui-kit"
-
 import Data from "../../data/mock-api.json"
+
 const data = Data.content.slides[1]
 
 const AboutYou = () => {

@@ -115,3 +115,21 @@ export const Paginate = ({ prevLink, nextLink }) => (
     <button className="btn btn-next" title={nextLink}>Next</button>
   </Pagi>
 );
+
+const Label = styled.label`
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  input {
+    margin-right: 1rem;
+  }
+`;
+
+export const Input = ({ value }) => (
+  <Label>
+    <input type="radio" value={`${value}`.replace(/\s+/g, '-').toLowerCase()} name="group" />
+    {value}
+  </Label>
+)
