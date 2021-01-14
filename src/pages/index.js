@@ -11,7 +11,7 @@ import Inspiration from '../templates/inspiration/'
 import 'swiper/swiper-bundle.min.css'
 
 import Data from "../data/mock-api.json"
-const data = Data.content.pagination
+const data = Data.content
 
 const IndexPage = () => {
 
@@ -26,7 +26,7 @@ const IndexPage = () => {
       type: "bullets",
       clickable: true,
       renderBullet: function (i, className) {
-        return '<span class="' + className + '"><p>' + (`${data.titles[i]}`) + '</p></span>';
+        return '<span class="' + className + '"><p>'+data.pagination.titles[i]+'</p></span>';
       },
     },
     navigation: {
