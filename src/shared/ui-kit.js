@@ -23,7 +23,11 @@ const NavBlock = styled.header`
   }
 `;
 
-export const Nav = ({ children }) => <NavBlock className="swiper-pagination">{children}</NavBlock>;
+export const Nav = ({ children }) => (
+  <NavBlock className="swiper-pagination">
+    {children}
+  </NavBlock>
+);
 
 const ArticleBlock = styled.article`
   background-color: #fff;
@@ -67,7 +71,11 @@ const Paragraph = styled.p`
   line-height: 120%;
 `;
 
-export const P = ({ content }) => (<Paragraph>{content}</Paragraph>);
+export const P = ({ content }) => (
+  <Paragraph>
+    {content}
+  </Paragraph>
+);
 
 const Pagi = styled.nav`
   display: flex;
@@ -102,7 +110,7 @@ const Pagi = styled.nav`
 `;
 
 export const Paginate = ({ prevLink, nextLink }) => (
-  <Pagi>
+  <Pagi className="slide-nav">
     <button className="btn btn-prev" title={prevLink}>Back</button>
     <button className="btn btn-next" title={nextLink}>Next</button>
   </Pagi>

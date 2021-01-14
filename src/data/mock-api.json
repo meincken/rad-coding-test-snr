@@ -90,18 +90,20 @@
         "slug": "top-moment",
         "pagination_id": 2,
         "theme": 2,
-        "heading": "Top moments",
-        "group_name": "You",
-        "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
-        "image": {
-          "url": "https://placeimg.com/500/430/nature",
-          "alt": "alternative text"
-        },
-        "back": {
-          "label": "Back"
-        },
-        "next": {
-          "label": "Next up - Inspiration"
+        "content": {
+          "heading": "Top moments",
+          "group_name": "You",
+          "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          "image": {
+            "url": "https://placeimg.com/500/430/nature",
+            "alt": "alternative text"
+          },
+          "back": {
+            "label": "Back"
+          },
+          "next": {
+            "label": "Next up - Inspiration"
+          }
         }
       },
       {
@@ -109,17 +111,19 @@
         "slug": "inspiration",
         "pagination_id": 3,
         "theme": 3,
-        "heading": "Be Inspired",
-        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. <br /><br />Click <a href=\"https://google.com\" target=\"_blank\">HERE</a> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.",
-        "image": {
-          "url": "https://placeimg.com/500/430/nature",
-          "alt": "alternative text"
-        },
-        "back": {
-          "label": "Back to - top moments"
-        },
-        "next": {
-          "label": ""
+        "content": {
+          "heading": "Be Inspired",
+          "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. <br /><br />Click <a href=\"https://google.com\" target=\"_blank\">HERE</a> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.",
+          "image": {
+            "url": "https://placeimg.com/500/430/nature",
+            "alt": "alternative text"
+          },
+          "back": {
+            "label": "Back to - top moments"
+          },
+          "next": {
+            "label": ""
+          }
         }
       }
     ],

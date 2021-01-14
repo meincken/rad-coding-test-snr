@@ -7,7 +7,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-styled-components`,
-    `gatsby-transformer-json`,
+    'gatsby-transformer-json',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

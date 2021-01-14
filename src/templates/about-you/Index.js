@@ -1,5 +1,5 @@
 import React from "react"
-import { Section, H2, P } from "../../shared/ui-kit"
+import { Section, H2, P, Paginate } from "../../shared/ui-kit"
 
 import Data from "../../data/mock-api.json"
 const data = Data.content.slides[1]
@@ -14,10 +14,10 @@ const AboutYou = () => {
       <div className="image-block">
         <img src={data.content.image.url} alt={data.content.image.alt} />
       </div>
-      <nav className="slide-nav">
-        <button className="btn btn-prev" title={data.content.back.label}>Back</button>
-        <button className="btn btn-next" title={data.content.next.label}>Next</button>
-      </nav>
+      <Paginate
+        prevLink={data.content.back.label}
+        nextLink={data.content.next.label}
+      />
     </Section>
   )
 }
