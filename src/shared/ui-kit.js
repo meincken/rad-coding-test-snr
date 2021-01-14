@@ -128,8 +128,8 @@ const Label = styled.label`
 `;
 
 export const Input = ({ value }) => (
-  <Label>
-    <input type="radio" value={`${value}`.replace(/\s+/g, '-').toLowerCase()} name="group" />
+  <Label for={`${value}`.replace(/\s+/g, '-').toLowerCase()}>
+    <input type="radio" id={`${value}`.replace(/\s+/g, '-').toLowerCase()} value={`${value}`.replace(/\s+/g, '-').toLowerCase()} name="group" />
     {value}
   </Label>
 )
